@@ -60,7 +60,7 @@ export const asDialog = (BodyComponent) => {
 
                                 <div className='modal-header'>
                                     {options.header}
-                                    <span className="close modal-close" title="Cancel" onClick={() => this.handleCancel()}>&times;</span>
+                                    <span className="close" title="Cancel" onClick={() => this.handleCancel()}>&times;</span>
                                 </div>
 
                                 <div className='modal-body _stretch'>

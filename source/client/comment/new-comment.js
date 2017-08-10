@@ -12,16 +12,18 @@ export class NewComment extends React.PureComponent {
     }
 
     onOk = () => {
-        let visitor = this.props.visitor;
-        let newComment = {
-            visitor: visitor ? visitor.visitor : '',
-            comment: this.input.value
-        };
-        this.props.dispatch(asyncAction_saveEntity(COMMENT, newComment))
-            .then(() => {
-                if (this.props.dialogActions)
-                    this.props.dialogActions.close();
-            })
+        if (this.input.value.length > 0) {
+            let visitor = this.props.visitor;
+            let newComment = {
+                visitor: visitor ? visitor.visitor : '',
+                comment: this.input.value
+            };
+            this.props.dispatch(asyncAction_saveEntity(COMMENT, newComment))
+                .then(() => {
+                    if (this.props.dialogActions)
+                        this.props.dialogActions.close();
+                })
+        }
     }
 
     render() {
