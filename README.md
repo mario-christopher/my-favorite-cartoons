@@ -11,9 +11,9 @@ The above versions were used during development. Lower versions may work, but it
 
 ## Setup
 1.    Open new terminal.
-2.    `git clone git@github.com:mario-christopher/my-favorite-cartoons.git`.       (ssh)
+2.    `git clone git@gitlab.com:mario-christopher/my-favorite-cartoons-mern.git`.       (ssh)
 3.    or
-4.    `git clone https://github.com/mario-christopher/my-favorite-cartoons.git`.   (http)
+4.    `git clone https://gitlab.com/mario-christopher/my-favorite-cartoons-mern.git`.   (http)
 5.    The source code will be cloned in your local folder `my-favorite-cartoons`.
 6.    `npm install`   _(to install npm dependencies)_
 7.    Edit file `source\server\config/config-dev.js` to set your MongoDb settings (DBName and Server Url), or let it remain as the defaults.
