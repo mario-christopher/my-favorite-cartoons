@@ -14,22 +14,21 @@ The above versions were used during development. Lower versions may work, but it
 
 ## Setup
 1.    Open new terminal.
-2.    `git clone git@gitlab.com:mario-christopher/my-favorite-cartoons-mern.git`.       (ssh)
-3.    or
-4.    `git clone https://gitlab.com/mario-christopher/my-favorite-cartoons-mern.git`.   (http)
-5.    The source code will be cloned in your local folder `my-favorite-cartoons`.
-6.    `npm install`   _(to install npm dependencies)_
-7.    Edit file `source\server\config/config-dev.js` to set your MongoDb settings (DBName and Server Url), or let it remain as the defaults.
-8.    Make sure your MongoDB instance is up and running, or accessible (if remote) at the above set url, before the next step.
-9.    `npm run initdb` _(to insert seed/test data into your MongoDB instance)_
-10.   You should see `Completed initDB successfully.` in your terminal as a confirmation that the data has been inserted successfully.
-11.   `npm run server`    _(to start the Node server serving the API)_
-12.   You should see `Running server at port 3000` as a confirmation that the server started and connected to mongoDb.
-13.   Open a new terminal.
-14.   `npm run client`   _(to start the webclient)_
-15.   You should see `webpack: Compiled successfully` as a confirmation that the client code compiled without issues.
-16.   Open a Google Chrome Browser window and browse to `http://localhost:3001/`
-17.   Note: The API is served from `http://localhost:3000/' and the web site runs from 'http://localhost:3001/' 
+2.    `git clone https://gitlab.com/mario-christopher/my-favorite-cartoons-mern.git`.
+3.    The source code will be cloned in your local folder `my-favorite-cartoons-mern`. cd 
+4.    `cd my-favorite-cartoons-mern`
+5.    `npm install`   _(to install npm dependencies)_
+6.    Edit file `source\server\config/config-dev.js` to set your MongoDb settings (DBName and Server Url), or let it remain as the defaults.
+7.    Make sure your MongoDB instance is up and running, or accessible (if remote) at the above set url, before the next step.
+8.    `npm run initdb` _(to insert seed/test data into your MongoDB instance)_
+9.   You should see `Completed initDB successfully.` in your terminal as a confirmation that the data has been inserted successfully.
+10.   `npm run server`    _(to start the Node server serving the API)_
+11.   You should see `Running server at port 3000` as a confirmation that the server started and connected to mongoDb.
+12.   Open a new terminal.
+13.   `npm run client`   _(to start the webclient)_
+14.   You should see `webpack: Compiled successfully` as a confirmation that the client code compiled without issues (it may take a few seconds).
+15.   Open a Google Chrome Browser window and browse to `http://localhost:3001/`
+16.   Note: The API is served from `http://localhost:3000/' and the web site runs from 'http://localhost:3001/' 
 
 ##  Application features:
 

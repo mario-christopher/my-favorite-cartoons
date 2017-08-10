@@ -1,9 +1,13 @@
+import { config } from '../picker';
 import { connectDb } from './util';
 import { cartoons, americandadChars, familyguyChars, kingofthehillChars, simpsonsChars, southparkChars, comments, visitors } from './seed-data';
 
 const initDb = () => {
 
-    connectDb()
+    let mongoDbUrl = config.mongoDB.url + config.mongoDB.dbName;
+    console.log('Connecting and initializing DB on : ', mongoDbUrl);
+
+    connectDb() 
         .then(db => {
             createData(db)
                 .then(() => {
