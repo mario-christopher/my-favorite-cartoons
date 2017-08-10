@@ -51,7 +51,7 @@ The above versions were used during development. Lower versions may work, but it
 19. **Custom Modal** dialog for application-wide modals.
 20. Use of **Higher Order Components** (HOC) to address Modal Dialog cross-cutting-concern.
 21. Implementation of Container and Presentational Component concept.
-22. Compatible with all modern browsers (using polyfills where needed).
+22. Compatible with all modern browsers (using polyfills/custom shims where needed).
 
 ###  Features in progress or not completed yet
 
