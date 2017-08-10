@@ -50,19 +50,18 @@ The above versions were used during development. Lower versions may work, but it
 18. Use of Controlled and UnControlled components.
 19. **Custom Modal** dialog for application-wide modals.
 20. Use of **Higher Order Components** (HOC) to address Modal Dialog cross-cutting-concern.
-21. Authentication with Login screen.
-22. **Breadcrumb** feature to show current location and navigation.
-23. Implementation of Container and Presentational Component concept.
-24. **Guarded Links/Buttons** to redirect to Login before authenticated actions.
-25. Compatible with all modern browsers (using polyfills where needed).
+21. Implementation of Container and Presentational Component concept.
+22. Compatible with all modern browsers (using polyfills where needed).
 
 ###  Features in progress or not completed yet
 
-26. Server Side Rendering of pages.
-27. Use of JWT (Json Web Tokens) to manage logged in user sessions.
-28. Use of Bootstrap for responsive experience.
-29. Input Validation.
-30. Unit Tests.
+23. Authentication with Login screen.
+24. **Guarded Links/Buttons** to redirect to Login before authenticated actions.
+25. Server Side Rendering of pages.
+26. Use of JWT (Json Web Tokens) to manage logged in user sessions.
+27. Use of Bootstrap for responsive experience.
+28. Input Validation.
+29. Unit Tests.
 
 ###   License
 
