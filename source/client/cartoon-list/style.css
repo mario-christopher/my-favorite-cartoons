@@ -1,0 +1,8 @@
+.cartoon-preview{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cartoon-preview:hover {
+    color: rebeccapurple;
+}

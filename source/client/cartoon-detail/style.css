@@ -1,0 +1,28 @@
+.banner{
+    float: left;
+    margin-right: 30px;
+}
+
+.detail{
+    font-size: 16px;
+    color: rebeccapurple;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.detail-header{
+    color: rebeccapurple;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.character-img {
+    height: 125px !important;
+    margin:5px;
+    border-radius: 5px;
+    border: solid #ffd203 1px;
+}
+
+.detail-back-link {
+    margin-top: 10px;
+}

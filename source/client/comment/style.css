@@ -1,0 +1,23 @@
+.modal-comment {
+    width: 500px;
+    height: 180px;
+}
+
+.comments {
+    padding:5px;
+}
+
+.comment-name{
+    color: #1db1ed;
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.comment-date{
+    font-size: 13px;
+}
+
+.comment{
+    font-size: 17px;
+}

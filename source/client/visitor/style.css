@@ -1,0 +1,18 @@
+.modal-login {
+    width: 300px;
+    height: 250px;
+}
+
+.login-prompt{
+    font-size: 17px !important;
+    margin-right: 10px;
+}
+
+.login-content input {
+    margin: 3px;
+}
+
+.login-err-msg {
+    color: red;
+    margin-left: 5px;
+}

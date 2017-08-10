@@ -1,0 +1,116 @@
+body {
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+    
+._row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+._col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+._stretch {
+    flex: 1;
+}
+
+._spc-top{
+    margin-top: 10px;
+}
+
+._spc-top-2{
+    margin-top: 20px;
+}
+
+#root {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.header-bg{
+    height: 150px;
+    width: 100%;
+    background-color: #ffd203;
+    color: rebeccapurple;
+}
+
+.header-title{
+    font-family:Impact, Charcoal, sans-serif; 
+    font-size: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer{
+    background-color: #1db1ed;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.footer-text {
+    color:  #ffd203;
+    font-family:Impact, Charcoal, sans-serif; 
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.footer-about {
+    cursor: pointer;
+}
+
+.content {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .header{
+        height: 40px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    .footer{
+        margin-top: 1px;
+    }
+
+    .detail-header{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.modal-about {
+    width: 600px;
+    height: 650px;
+}
+
+.about-features{
+    max-height: 470px;
+    overflow-y: scroll;
+}
+
+/*--- Bootstrap overrides -----------------------------------------*/
+
+.panel-footer{
+    text-align: right;
+}
+
+.container {
+    padding: 1px !important;
+}
+
+.modal-backdrop{
+    z-index: 5 !important;
+}
