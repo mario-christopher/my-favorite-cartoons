@@ -1,7 +1,10 @@
 # my-favorite-cartoons
 A sample application that runs on a MERN Stack using Redux for State management.
 
-## To run the application, you'll need:
+## Try it out:
+https://my-favorite-cartoons-mern.herokuapp.com/
+
+## Software requirements:
 * Node      (v6.9.1).
 * NPM       (v3.10.8).
 * MongoDB   (v3.4.3 , Local or remote).
