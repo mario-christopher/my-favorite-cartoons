@@ -1,5 +1,5 @@
 import express from 'express';
-import { getCartoon, getCartoons, getCharacters } from '../db/data-access';
+import { getCartoon, getCartoons, getCharacters, getSeasons } from '../db/data-access';
 
 export const router = express.Router();
 
@@ -33,4 +33,22 @@ router.get('/:id/characters', (req, res, next) => {
         .catch(err => {
             res.status(500).send('Server error.')
         })
+})
+
+router.get('/:id/seasons/', (req, res, next) => {
+    let id = req.params.id;
+    getSeasons(id)
+        .then(result => {
+            let tmdbSeasonInfo = result.seasons;
+            tmdbSeasonInfo = tmdbSeasonInfo.map(season => Object.assign(
+                season,
+                { _id: season.id },
+                { cartoonId: id },
+                { tmdb_id: '' })
+            );
+            res.json(tmdbSeasonInfo);
+        })
+        .catch(err => {
+            res.status(500).send('Server error.')
+        })    
 })

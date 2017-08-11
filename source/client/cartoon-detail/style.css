@@ -26,3 +26,34 @@
 .detail-back-link {
     margin-top: 10px;
 }
+
+/*--- d3 Chart style -----------------------------------------*/
+
+.bar {
+    display: inline-block;
+    width: 20px;
+    margin-right: 2px;
+    background-color: teal;
+}
+
+.bar-fill{
+     fill: blueviolet;
+     margin-right: 2px;
+}    
+
+.bar-text{
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: black;
+}
+
+.axis-text{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    fill: black;
+}
+
+.chart {
+    border: 1px solid lightgray;
+}

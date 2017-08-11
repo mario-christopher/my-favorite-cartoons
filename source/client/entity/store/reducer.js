@@ -1,5 +1,5 @@
 import { EntityActions } from './action';
-import { CARTOON, CHARACTER, COMMENT, VISITOR } from '../entity-name';
+import { CARTOON, CHARACTER, COMMENT, VISITOR, SEASON } from '../entity-name';
 
 const newEntity = () => {
     return {
@@ -13,7 +13,8 @@ const initState = {
         [CARTOON.name]: newEntity(),
         [CHARACTER.name]: newEntity(),
         [VISITOR.name]: newEntity(),
-        [COMMENT.name]: newEntity()
+        [COMMENT.name]: newEntity(),
+        [SEASON.name]: newEntity()
     },
     ui: {
         loading: false,
