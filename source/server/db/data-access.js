@@ -27,7 +27,6 @@ export const getSeasons = (cartoonId) => {
     return getData('cartoon', { _id: cartoonId }, {})
         .then(cartoons => {
             let url = `${config.tmdb.api_base_url}${cartoons[0].tmdb_id}?api_key=${config.tmdb.api_key}&language=en-US`;
-            console.log('Carton : ', cartoons[0], url)
             return axios.get(
                 url,
                 {
