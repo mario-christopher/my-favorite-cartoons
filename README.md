@@ -2,7 +2,7 @@
 A sample application that runs on a MERN Stack using Redux for State management.
 
 ## Try it out:
-https://my-favorite-cartoons-mern.herokuapp.com/
+https://my-favorite-cartoons.herokuapp.com/
 
 
 ## Software requirements:
