@@ -23,14 +23,15 @@ export const asyncAction_fetchEntity = (entity) => {
                 return data;
             })
             .catch(err => {
-                throw err;
+                dispatch(action_fetchEntity(EntityActions.ENTITY_ERR, null, err, entity));
+                console.error(err);
             })
         )
             .then(data => {
                 dispatch(action_fetchEntity(EntityActions.ENTITY_RES, data, null, entity));
             })
             .catch(err => {
-                dispatch(action_fetchEntity(EntityActions.ENTITY_ERR, null, err, entity));
+                console.error(err)
             })
     }
 }
@@ -50,14 +51,15 @@ export const asyncAction_saveEntity = (entity, data) => {
                 return data;
             })
             .catch(err => {
-                throw err;
+                dispatch(action_saveEntity(EntityActions.ENTITY_ERR, null, err, entity));
+                console.error(err);
             })
         )
             .then(data => {
                 dispatch(action_saveEntity(EntityActions.ENTITY_RES, data, null, entity));
             })
             .catch(err => {
-                dispatch(action_saveEntity(EntityActions.ENTITY_ERR, null, err, entity));
+                console.error(err);
             })
     }
 }

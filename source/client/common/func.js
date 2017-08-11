@@ -19,6 +19,17 @@ export const sortEntity = (entity, sortBy, desc) => {
     }
 }
 
+export const entityToList = (entity) => {
+    let values = [];
+    if (entity) {
+        for (var key in entity.byIds) {
+            values.push(entity.byIds[key]);
+        }
+    }
+    return values;
+    //return Object.values(entity.byIds);
+}
+
 export const commentDate = (dt) => {
     return moment(dt).format('MMM DD, YYYY, hh:mm A');
 }

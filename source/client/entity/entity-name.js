@@ -17,3 +17,8 @@ export const VISITOR = {
     name: 'visitor',
     url: 'visitors'
 }
+
+export const SEASON = {
+    name: 'season',
+    url: 'cartoons/{0}/seasons/{1}'
+}

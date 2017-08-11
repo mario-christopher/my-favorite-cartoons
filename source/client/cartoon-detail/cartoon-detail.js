@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { Image } from '../common/image';
 import { CharacterList } from './character-list';
+import { SeasonInfo } from './season-info';
 
 export class CartoonDetail extends React.PureComponent {
 
@@ -36,7 +37,10 @@ export class CartoonDetail extends React.PureComponent {
                     }
                 </div>
                 {cartoon &&
-                    <CharacterList characters={this.props.characters} cartoonId={cartoon._id} />
+                    <div>
+                        <CharacterList characters={this.props.characters} cartoonId={cartoon._id} />
+                        <SeasonInfo seasons={this.props.seasons} cartoonId={cartoon._id} />
+                    </div>
                 }
             </div>
         );
@@ -47,6 +51,7 @@ const mapPropsToState = (state) => {
     return {
         cartoons: state.entities.entities.cartoon,
         characters: state.entities.entities.character,
+        seasons: state.entities.entities.season,
     };
 }
 CartoonDetail = connect(mapPropsToState)(CartoonDetail)
