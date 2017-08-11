@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const fetchGet = (url) => {
     return axios.get(
-        'api/' + url,
+        'api' + url,
         {
             headers: {
                 'Accept': 'application/json',
@@ -19,7 +19,7 @@ export const fetchGet = (url) => {
 
 export const fetchPost = (url, data) => {
     return axios.post(
-        'api/' + url,
+        'api' + url,
         data,
         {
             headers: {

@@ -4,6 +4,7 @@ import cors from 'cors';
 import path from 'path';
 
 import { router as apiRouter } from './api/api';
+import { logUrl } from './middleware/log-url';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,6 +16,9 @@ let staticPathBuild = path.resolve(__dirname, '../../public/build');
 app.use(express.static(staticPathBuild));
 
 app.use(cors());
+
+app.use(logUrl);
+
 app.use('/api', apiRouter);
 
 app.get('*', (req, res) => {
