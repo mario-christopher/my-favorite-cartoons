@@ -70,6 +70,7 @@ module.exports = {
             'process.env': {
                 NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'dev')
             }
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
 }
