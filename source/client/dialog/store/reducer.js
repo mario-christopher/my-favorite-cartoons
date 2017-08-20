@@ -3,7 +3,7 @@ import { findIndex } from '../../common/func';
 
 const initState = {
     ui: {
-        openDialogs: ['About']
+        openDialogs: []
     }
 }
 
